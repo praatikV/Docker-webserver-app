@@ -56,7 +56,7 @@ docker ps                     # STATUS column shows (healthy) / (unhealthy)
 docker inspect --format='{{json .State.Health}}' webserver-demo
 ```
 
-## 5. View  / troubleshoot
+## 5. View logs / troubleshoot
 
 ```bash
 docker logs webserver-demo          # view stdout/stderr
