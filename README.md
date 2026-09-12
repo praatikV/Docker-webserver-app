@@ -22,7 +22,7 @@ docker-webserver-app/
 docker build -t docker-webserver-app .
 ```
 
-## 2. Run the 
+## 2. Run the container
 
 ```bash
 docker run -d -p 3000:3000 --name webserver-demo docker-webserver-app
