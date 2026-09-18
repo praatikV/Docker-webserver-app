@@ -12,7 +12,7 @@ RUN npm install --omit=dev
 
 # Copy application source
 COPY server.js ./
-COPY public ./private
+COPY public ./public
 
 # Run as non-root user for security (best practice)
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
