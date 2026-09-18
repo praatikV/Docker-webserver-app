@@ -16,7 +16,7 @@ COPY public ./public
 
 # Run as non-root user for security (best practice)
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER app
+USER appuser
 
 # Document the port the container listens on
 EXPOSE 3000
