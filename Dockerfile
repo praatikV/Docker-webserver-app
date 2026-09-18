@@ -19,7 +19,7 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 
 # Document the port the container listens on
-EXPOSE 3000
+EXPOSE 3080
 
 # Container health check - Docker will mark the container unhealthy if this fails
 HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
